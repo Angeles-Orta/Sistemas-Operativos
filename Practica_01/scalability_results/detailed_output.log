@@ -1,0 +1,1788 @@
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 1
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47138, PPID=47137 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47138 - Completado. Contador local: 500000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 1
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 1
+Incrementos por trabajador: 500000
+Total incrementos esperados: 500000
+Contador final: 500000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 13.72 ms
+Throughput: 36432.53 ops/ms
+Tiempo CPU total: 0.0131 segundos
+Utilización CPU: 95.73%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 1
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 0] TID=140051458668096, PID=47159 - Iniciando 500000 incrementos (con mutex)
+[HILO 0] TID=140051458668096 - Completado
+Trabajadores: 1
+Incrementos por trabajador: 500000
+Total incrementos esperados: 500000
+Contador final: 500000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 13.40 ms
+Throughput: 37324.57 ops/ms
+Tiempo CPU total: 0.0103 segundos
+Utilización CPU: 76.77%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 1
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47182, PPID=47181 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 0] PID=47182 - Completado. Contador local: 500000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 1
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+Trabajadores: 1
+Incrementos por trabajador: 500000
+Total incrementos esperados: 500000
+Contador final: 500000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 1.67 ms
+Throughput: 298864.32 ops/ms
+Tiempo CPU total: 0.0015 segundos
+Utilización CPU: 88.52%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 1
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (SIN SINCRONIZACIÓN) ===
+[HILO 0] TID=140295600989760, PID=47203 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 0] TID=140295600989760 - Completado
+Trabajadores: 1
+Incrementos por trabajador: 500000
+Total incrementos esperados: 500000
+Contador final: 500000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 0.06 ms
+Throughput: 8620689.66 ops/ms
+Tiempo CPU total: 0.0001 segundos
+Utilización CPU: 129.31%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47227, PPID=47225 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47227 - Completado. Contador local: 798065
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47226, PPID=47225 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47226 - Completado. Contador local: 1000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 2
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1000000
+Contador final: 1000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 61.66 ms
+Throughput: 16217.18 ops/ms
+Tiempo CPU total: 0.0840 segundos
+Utilización CPU: 136.19%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 0] TID=140546040665664, PID=47248 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=140546032272960, PID=47248 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=140546032272960 - Completado
+[HILO 0] TID=140546040665664 - Completado
+Trabajadores: 2
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1000000
+Contador final: 1000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 60.26 ms
+Throughput: 16594.21 ops/ms
+Tiempo CPU total: 0.0871 segundos
+Utilización CPU: 144.53%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47272, PPID=47271 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 0] PID=47272 - Completado. Contador local: 446485
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47273, PPID=47271 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 1] PID=47273 - Completado. Contador local: 595110
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+Trabajadores: 2
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1000000
+Contador final: 595110
+¿Resultado correcto?: NO
+Tiempo de ejecución: 4.38 ms
+Throughput: 228310.50 ops/ms
+Tiempo CPU total: 0.0081 segundos
+Utilización CPU: 185.09%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 2
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (SIN SINCRONIZACIÓN) ===
+[HILO 0] TID=140005109995072, PID=47294 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 0] TID=140005109995072 - Completado
+[HILO 1] TID=140005101602368, PID=47294 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 1] TID=140005101602368 - Completado
+Trabajadores: 2
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1000000
+Contador final: 1000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 0.07 ms
+Throughput: 14084507.04 ops/ms
+Tiempo CPU total: 0.0001 segundos
+Utilización CPU: 177.46%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47318, PPID=47317 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47318 - Completado. Contador local: 1147590
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47320, PPID=47317 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 2] PID=47320 - Completado. Contador local: 1472731
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47319, PPID=47317 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47319 - Completado. Contador local: 1500000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 3
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1500000
+Contador final: 1500000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 77.06 ms
+Throughput: 19466.61 ops/ms
+Tiempo CPU total: 0.0944 segundos
+Utilización CPU: 122.47%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 1] TID=140378204223040, PID=47341 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=140378195830336, PID=47341 - Iniciando 500000 incrementos (con mutex)
+[HILO 0] TID=140378212615744, PID=47341 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=140378195830336 - Completado
+[HILO 1] TID=140378204223040 - Completado
+[HILO 0] TID=140378212615744 - Completado
+Trabajadores: 3
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1500000
+Contador final: 1500000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 63.38 ms
+Throughput: 23664.90 ops/ms
+Tiempo CPU total: 0.0539 segundos
+Utilización CPU: 85.11%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47368, PPID=47365 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 2] PID=47368 - Completado. Contador local: 711951
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47367, PPID=47365 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 1] PID=47367 - Completado. Contador local: 1133889
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47366, PPID=47365 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 0] PID=47366 - Completado. Contador local: 1177394
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+Trabajadores: 3
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1500000
+Contador final: 1177394
+¿Resultado correcto?: NO
+Tiempo de ejecución: 5.83 ms
+Throughput: 257113.47 ops/ms
+Tiempo CPU total: 0.0068 segundos
+Utilización CPU: 116.44%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 3
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (SIN SINCRONIZACIÓN) ===
+[HILO 0] TID=139656215217728, PID=47389 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 0] TID=139656215217728 - Completado
+[HILO 1] TID=139656206825024, PID=47389 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 1] TID=139656206825024 - Completado
+[HILO 2] TID=139656198432320, PID=47389 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 2] TID=139656198432320 - Completado
+Trabajadores: 3
+Incrementos por trabajador: 500000
+Total incrementos esperados: 1500000
+Contador final: 1500000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 0.60 ms
+Throughput: 2479338.84 ops/ms
+Tiempo CPU total: 0.0002 segundos
+Utilización CPU: 38.68%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47414, PPID=47413 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47414 - Completado. Contador local: 1365249
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47416, PPID=47413 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 2] PID=47416 - Completado. Contador local: 1585316
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47417, PPID=47413 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 3] PID=47417 - Completado. Contador local: 1803948
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47415, PPID=47413 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47415 - Completado. Contador local: 2000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 4
+Incrementos por trabajador: 500000
+Total incrementos esperados: 2000000
+Contador final: 2000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 95.07 ms
+Throughput: 21037.13 ops/ms
+Tiempo CPU total: 0.1157 segundos
+Utilización CPU: 121.75%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 0] TID=140394540959296, PID=47447 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=140394532566592, PID=47447 - Iniciando 500000 incrementos (con mutex)
+[HILO 3] TID=140394515781184, PID=47447 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=140394524173888, PID=47447 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=140394532566592 - Completado
+[HILO 3] TID=140394515781184 - Completado
+[HILO 0] TID=140394540959296 - Completado
+[HILO 2] TID=140394524173888 - Completado
+Trabajadores: 4
+Incrementos por trabajador: 500000
+Total incrementos esperados: 2000000
+Contador final: 2000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 115.18 ms
+Throughput: 17363.67 ops/ms
+Tiempo CPU total: 0.1729 segundos
+Utilización CPU: 150.09%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47475, PPID=47472 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 2] PID=47475 - Completado. Contador local: 530711
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47473, PPID=47472 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 0] PID=47473 - Completado. Contador local: 591152
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47474, PPID=47472 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 1] PID=47474 - Completado. Contador local: 645695
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47476, PPID=47472 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 3] PID=47476 - Completado. Contador local: 1145695
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+Trabajadores: 4
+Incrementos por trabajador: 500000
+Total incrementos esperados: 2000000
+Contador final: 1145695
+¿Resultado correcto?: NO
+Tiempo de ejecución: 7.71 ms
+Throughput: 259504.35 ops/ms
+Tiempo CPU total: 0.0157 segundos
+Utilización CPU: 204.04%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 4
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (SIN SINCRONIZACIÓN) ===
+[HILO 0] TID=140538648618560, PID=47497 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 0] TID=140538648618560 - Completado
+[HILO 2] TID=140538631833152, PID=47497 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 2] TID=140538631833152 - Completado
+[HILO 3] TID=140538623440448, PID=47497 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 3] TID=140538623440448 - Completado
+[HILO 1] TID=140538640225856, PID=47497 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 1] TID=140538640225856 - Completado
+Trabajadores: 4
+Incrementos por trabajador: 500000
+Total incrementos esperados: 2000000
+Contador final: 2000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 0.19 ms
+Throughput: 10309278.35 ops/ms
+Tiempo CPU total: 0.0002 segundos
+Utilización CPU: 114.95%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47526, PPID=47522 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 3] PID=47526 - Completado. Contador local: 2250823
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47525, PPID=47522 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 2] PID=47525 - Completado. Contador local: 2456555
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47523, PPID=47522 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47523 - Completado. Contador local: 2681903
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 5] PID=47528, PPID=47522 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 5] PID=47528 - Completado. Contador local: 2687925
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47524, PPID=47522 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47524 - Completado. Contador local: 2966882
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 4] PID=47527, PPID=47522 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 4] PID=47527 - Completado. Contador local: 3000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 6
+Incrementos por trabajador: 500000
+Total incrementos esperados: 3000000
+Contador final: 3000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 155.03 ms
+Throughput: 19351.09 ops/ms
+Tiempo CPU total: 0.1860 segundos
+Utilización CPU: 119.99%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 0] TID=140705398576704, PID=47549 - Iniciando 500000 incrementos (con mutex)
+[HILO 3] TID=140705373398592, PID=47549 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=140705381791296, PID=47549 - Iniciando 500000 incrementos (con mutex)
+[HILO 5] TID=140705356613184, PID=47549 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=140705390184000, PID=47549 - Iniciando 500000 incrementos (con mutex)
+[HILO 4] TID=140705365005888, PID=47549 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=140705381791296 - Completado
+[HILO 5] TID=140705356613184 - Completado
+[HILO 0] TID=140705398576704 - Completado
+[HILO 3] TID=140705373398592 - Completado
+[HILO 4] TID=140705365005888 - Completado
+[HILO 1] TID=140705390184000 - Completado
+Trabajadores: 6
+Incrementos por trabajador: 500000
+Total incrementos esperados: 3000000
+Contador final: 3000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 193.21 ms
+Throughput: 15527.31 ops/ms
+Tiempo CPU total: 0.2560 segundos
+Utilización CPU: 132.51%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47579, PPID=47576 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 2] PID=47579 - Completado. Contador local: 481578
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 4] PID=47581, PPID=47576 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 4] PID=47581 - Completado. Contador local: 529986
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47578, PPID=47576 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 1] PID=47578 - Completado. Contador local: 597825
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 5] PID=47582, PPID=47576 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 5] PID=47582 - Completado. Contador local: 1064262
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47577, PPID=47576 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 0] PID=47577 - Completado. Contador local: 1316057
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47580, PPID=47576 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 3] PID=47580 - Completado. Contador local: 1381681
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+Trabajadores: 6
+Incrementos por trabajador: 500000
+Total incrementos esperados: 3000000
+Contador final: 1381681
+¿Resultado correcto?: NO
+Tiempo de ejecución: 11.83 ms
+Throughput: 253678.34 ops/ms
+Tiempo CPU total: 0.0380 segundos
+Utilización CPU: 321.23%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 6
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (SIN SINCRONIZACIÓN) ===
+[HILO 0] TID=140061631542848, PID=47603 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 0] TID=140061631542848 - Completado
+[HILO 1] TID=140061623150144, PID=47603 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 1] TID=140061623150144 - Completado
+[HILO 2] TID=140061614757440, PID=47603 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 2] TID=140061614757440 - Completado
+[HILO 3] TID=140061606364736, PID=47603 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 3] TID=140061606364736 - Completado
+[HILO 4] TID=140061597972032, PID=47603 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 4] TID=140061597972032 - Completado
+[HILO 5] TID=140061589579328, PID=47603 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 5] TID=140061589579328 - Completado
+Trabajadores: 6
+Incrementos por trabajador: 500000
+Total incrementos esperados: 3000000
+Contador final: 3000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 0.16 ms
+Throughput: 18292682.93 ops/ms
+Tiempo CPU total: 0.0003 segundos
+Utilización CPU: 179.27%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47633, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 2] PID=47633 - Completado. Contador local: 3144372
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 7] PID=47638, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 7] PID=47638 - Completado. Contador local: 3336278
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47634, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 3] PID=47634 - Completado. Contador local: 3660748
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 6] PID=47637, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 6] PID=47637 - Completado. Contador local: 3803938
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47632, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47632 - Completado. Contador local: 3930129
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47631, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47631 - Completado. Contador local: 3939290
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 4] PID=47635, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 4] PID=47635 - Completado. Contador local: 3973089
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 5] PID=47636, PPID=47630 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 5] PID=47636 - Completado. Contador local: 4000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 8
+Incrementos por trabajador: 500000
+Total incrementos esperados: 4000000
+Contador final: 4000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 217.46 ms
+Throughput: 18394.36 ops/ms
+Tiempo CPU total: 0.3264 segundos
+Utilización CPU: 150.09%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 0] TID=140504656164416, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=140504647771712, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=140504639379008, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 4] TID=140504622593600, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 3] TID=140504630986304, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 7] TID=140504597415488, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 5] TID=140504614200896, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 6] TID=140504605808192, PID=47659 - Iniciando 500000 incrementos (con mutex)
+[HILO 6] TID=140504605808192 - Completado
+[HILO 7] TID=140504597415488 - Completado
+[HILO 2] TID=140504639379008 - Completado
+[HILO 4] TID=140504622593600 - Completado
+[HILO 1] TID=140504647771712 - Completado
+[HILO 0] TID=140504656164416 - Completado
+[HILO 3] TID=140504630986304 - Completado
+[HILO 5] TID=140504614200896 - Completado
+Trabajadores: 8
+Incrementos por trabajador: 500000
+Total incrementos esperados: 4000000
+Contador final: 4000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 231.51 ms
+Throughput: 17278.10 ops/ms
+Tiempo CPU total: 0.2641 segundos
+Utilización CPU: 114.10%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 7] PID=47697, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 7] PID=47697 - Completado. Contador local: 500000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 6] PID=47696, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 6] PID=47696 - Completado. Contador local: 1000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47690, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 0] PID=47690 - Completado. Contador local: 1500000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47692, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 2] PID=47692 - Completado. Contador local: 2000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47693, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 3] PID=47693 - Completado. Contador local: 3095533
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 5] PID=47695, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 5] PID=47695 - Completado. Contador local: 3525703
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47691, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 1] PID=47691 - Completado. Contador local: 3525988
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+[PROCESO 4] PID=47694, PPID=47689 - Iniciando 500000 incrementos (sin sincronización)
+[PROCESO 4] PID=47694 - Completado. Contador local: 3752130
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (SIN SINCRONIZACIÓN) ===
+Trabajadores: 8
+Incrementos por trabajador: 500000
+Total incrementos esperados: 4000000
+Contador final: 3752130
+¿Resultado correcto?: NO
+Tiempo de ejecución: 18.34 ms
+Throughput: 218054.95 ops/ms
+Tiempo CPU total: 0.0138 segundos
+Utilización CPU: 75.49%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 8
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (SIN SINCRONIZACIÓN) ===
+[HILO 0] TID=139640096872000, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 0] TID=139640096872000 - Completado
+[HILO 6] TID=139640046515776, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 6] TID=139640046515776 - Completado
+[HILO 5] TID=139640054908480, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 5] TID=139640054908480 - Completado
+[HILO 3] TID=139640071693888, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 3] TID=139640071693888 - Completado
+[HILO 1] TID=139640088479296, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 1] TID=139640088479296 - Completado
+[HILO 4] TID=139640063301184, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 4] TID=139640063301184 - Completado
+[HILO 2] TID=139640080086592, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 2] TID=139640080086592 - Completado
+[HILO 7] TID=139640038123072, PID=47718 - Iniciando 500000 incrementos (sin sincronización)
+[HILO 7] TID=139640038123072 - Completado
+Trabajadores: 8
+Incrementos por trabajador: 500000
+Total incrementos esperados: 4000000
+Contador final: 4000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 1.53 ms
+Throughput: 2612671.46 ops/ms
+Tiempo CPU total: 0.0006 segundos
+Utilización CPU: 40.43%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 4] PID=47752, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 4] PID=47752 - Completado. Contador local: 1636799
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 5] PID=47753, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 5] PID=47753 - Completado. Contador local: 4098515
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47751, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 3] PID=47751 - Completado. Contador local: 4773773
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 6] PID=47754, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 6] PID=47754 - Completado. Contador local: 4793232
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47749, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47749 - Completado. Contador local: 5126663
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47750, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 2] PID=47750 - Completado. Contador local: 5227931
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 8] PID=47756, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 8] PID=47756 - Completado. Contador local: 5320942
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 7] PID=47755, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 7] PID=47755 - Completado. Contador local: 5703169
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 10] PID=47758, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 10] PID=47758 - Completado. Contador local: 5932696
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 9] PID=47757, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 9] PID=47757 - Completado. Contador local: 5953538
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47748, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47748 - Completado. Contador local: 5961951
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 11] PID=47759, PPID=47747 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 11] PID=47759 - Completado. Contador local: 6000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 12
+Incrementos por trabajador: 500000
+Total incrementos esperados: 6000000
+Contador final: 6000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 315.35 ms
+Throughput: 19026.30 ops/ms
+Tiempo CPU total: 0.3685 segundos
+Utilización CPU: 116.84%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 12
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 0] TID=139710092736064, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=139710084343360, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=139710075950656, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 10] TID=139710008809024, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 3] TID=139710067557952, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 9] TID=139710017201728, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 5] TID=139710050772544, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 7] TID=139710033987136, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 11] TID=139710000416320, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 6] TID=139710042379840, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 8] TID=139710025594432, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 4] TID=139710059165248, PID=47780 - Iniciando 500000 incrementos (con mutex)
+[HILO 0] TID=139710092736064 - Completado
+[HILO 11] TID=139710000416320 - Completado
+[HILO 2] TID=139710075950656 - Completado
+[HILO 7] TID=139710033987136 - Completado
+[HILO 6] TID=139710042379840 - Completado
+[HILO 5] TID=139710050772544 - Completado
+[HILO 1] TID=139710084343360 - Completado
+[HILO 10] TID=139710008809024 - Completado
+[HILO 3] TID=139710067557952 - Completado
+[HILO 9] TID=139710017201728 - Completado
+[HILO 4] TID=139710059165248 - Completado
+[HILO 8] TID=139710025594432 - Completado
+Trabajadores: 12
+Incrementos por trabajador: 500000
+Total incrementos esperados: 6000000
+Contador final: 6000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 351.68 ms
+Throughput: 17060.92 ops/ms
+Tiempo CPU total: 0.5092 segundos
+Utilización CPU: 144.79%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47837, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 3] PID=47837 - Completado. Contador local: 4642677
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 11] PID=47845, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 11] PID=47845 - Completado. Contador local: 6272788
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 15] PID=47849, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 15] PID=47849 - Completado. Contador local: 6456963
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47836, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 2] PID=47836 - Completado. Contador local: 6663668
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 4] PID=47838, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 4] PID=47838 - Completado. Contador local: 6694380
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47835, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47835 - Completado. Contador local: 6964371
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47834, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47834 - Completado. Contador local: 7322779
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 6] PID=47840, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 6] PID=47840 - Completado. Contador local: 7404306
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 7] PID=47841, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 7] PID=47841 - Completado. Contador local: 7610380
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 14] PID=47848, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 14] PID=47848 - Completado. Contador local: 7719933
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 8] PID=47842, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 8] PID=47842 - Completado. Contador local: 7759256
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 5] PID=47839, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 5] PID=47839 - Completado. Contador local: 7805797
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 13] PID=47847, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 13] PID=47847 - Completado. Contador local: 7821616
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 9] PID=47843, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 9] PID=47843 - Completado. Contador local: 7965022
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 12] PID=47846, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 12] PID=47846 - Completado. Contador local: 7998367
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 10] PID=47844, PPID=47833 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 10] PID=47844 - Completado. Contador local: 8000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 16
+Incrementos por trabajador: 500000
+Total incrementos esperados: 8000000
+Contador final: 8000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 423.46 ms
+Throughput: 18891.94 ops/ms
+Tiempo CPU total: 0.5241 segundos
+Utilización CPU: 123.76%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 16
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 0] TID=139976424138304, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=139976415745600, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=139976407352896, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 6] TID=139976373782080, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 8] TID=139976356996672, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 3] TID=139976398960192, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 5] TID=139976382174784, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 9] TID=139976348603968, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 10] TID=139976340211264, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 11] TID=139976331818560, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 12] TID=139976323425856, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 13] TID=139976315033152, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 14] TID=139976306640448, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 4] TID=139976390567488, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 7] TID=139976365389376, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 15] TID=139976298247744, PID=47879 - Iniciando 500000 incrementos (con mutex)
+[HILO 10] TID=139976340211264 - Completado
+[HILO 14] TID=139976306640448 - Completado
+[HILO 2] TID=139976407352896 - Completado
+[HILO 7] TID=139976365389376 - Completado
+[HILO 6] TID=139976373782080 - Completado
+[HILO 8] TID=139976356996672 - Completado
+[HILO 12] TID=139976323425856 - Completado
+[HILO 13] TID=139976315033152 - Completado
+[HILO 0] TID=139976424138304 - Completado
+[HILO 9] TID=139976348603968 - Completado
+[HILO 3] TID=139976398960192 - Completado
+[HILO 5] TID=139976382174784 - Completado
+[HILO 1] TID=139976415745600 - Completado
+[HILO 4] TID=139976390567488 - Completado
+[HILO 11] TID=139976331818560 - Completado
+[HILO 15] TID=139976298247744 - Completado
+Trabajadores: 16
+Incrementos por trabajador: 500000
+Total incrementos esperados: 8000000
+Contador final: 8000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 503.38 ms
+Throughput: 15892.63 ops/ms
+Tiempo CPU total: 0.6846 segundos
+Utilización CPU: 136.00%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 9] PID=47927, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 9] PID=47927 - Completado. Contador local: 5815394
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 5] PID=47923, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 5] PID=47923 - Completado. Contador local: 7142779
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 1] PID=47919, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 1] PID=47919 - Completado. Contador local: 8104147
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 19] PID=47937, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 19] PID=47937 - Completado. Contador local: 8765383
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 7] PID=47925, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 7] PID=47925 - Completado. Contador local: 8910072
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 17] PID=47935, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 17] PID=47935 - Completado. Contador local: 8955006
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 2] PID=47920, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 2] PID=47920 - Completado. Contador local: 9314419
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 11] PID=47929, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 11] PID=47929 - Completado. Contador local: 9328480
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 0] PID=47918, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 0] PID=47918 - Completado. Contador local: 9402135
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 12] PID=47930, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 12] PID=47930 - Completado. Contador local: 9404434
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 15] PID=47933, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 15] PID=47933 - Completado. Contador local: 9537869
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 13] PID=47931, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 13] PID=47931 - Completado. Contador local: 9655129
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 14] PID=47932, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 14] PID=47932 - Completado. Contador local: 9815067
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 6] PID=47924, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 6] PID=47924 - Completado. Contador local: 9830023
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 16] PID=47934, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 16] PID=47934 - Completado. Contador local: 9858423
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 18] PID=47936, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 18] PID=47936 - Completado. Contador local: 9884859
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 10] PID=47928, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 10] PID=47928 - Completado. Contador local: 9906986
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 3] PID=47921, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 3] PID=47921 - Completado. Contador local: 9922403
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 4] PID=47922, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 4] PID=47922 - Completado. Contador local: 9976573
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+[PROCESO 8] PID=47926, PPID=47917 - Iniciando 500000 incrementos (con sincronización)
+[PROCESO 8] PID=47926 - Completado. Contador local: 10000000
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON PROCESOS (CON SINCRONIZACIÓN) ===
+Trabajadores: 20
+Incrementos por trabajador: 500000
+Total incrementos esperados: 10000000
+Contador final: 10000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 528.47 ms
+Throughput: 18922.66 ops/ms
+Tiempo CPU total: 0.6388 segundos
+Utilización CPU: 120.87%
+=== COMPARACIÓN PROCESOS vs HILOS ===
+Configuración:
+- Trabajadores: 20
+- Incrementos por trabajador: 500000
+- Iteraciones de prueba: 1
+
+>>> ITERACIÓN 1/1 <<<
+
+=== PRUEBA CON HILOS (CON SINCRONIZACIÓN) ===
+[HILO 19] TID=140314278905408, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 8] TID=140314371225152, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 16] TID=140314304083520, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 17] TID=140314295690816, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 15] TID=140314312476224, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 5] TID=140314396403264, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 3] TID=140314413188672, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 14] TID=140314320868928, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 11] TID=140314346047040, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 1] TID=140314429974080, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 0] TID=140314438366784, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 12] TID=140314337654336, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 18] TID=140314287298112, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 13] TID=140314329261632, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 2] TID=140314421581376, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 6] TID=140314388010560, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 9] TID=140314362832448, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 10] TID=140314354439744, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 4] TID=140314404795968, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 7] TID=140314379617856, PID=47958 - Iniciando 500000 incrementos (con mutex)
+[HILO 8] TID=140314371225152 - Completado
+[HILO 19] TID=140314278905408 - Completado
+[HILO 14] TID=140314320868928 - Completado
+[HILO 7] TID=140314379617856 - Completado
+[HILO 18] TID=140314287298112 - Completado
+[HILO 15] TID=140314312476224 - Completado
+[HILO 4] TID=140314404795968 - Completado
+[HILO 9] TID=140314362832448 - Completado
+[HILO 1] TID=140314429974080 - Completado
+[HILO 10] TID=140314354439744 - Completado
+[HILO 5] TID=140314396403264 - Completado
+[HILO 16] TID=140314304083520 - Completado
+[HILO 0] TID=140314438366784 - Completado
+[HILO 6] TID=140314388010560 - Completado
+[HILO 2] TID=140314421581376 - Completado
+[HILO 3] TID=140314413188672 - Completado
+[HILO 11] TID=140314346047040 - Completado
+[HILO 17] TID=140314295690816 - Completado
+[HILO 12] TID=140314337654336 - Completado
+[HILO 13] TID=140314329261632 - Completado
+Trabajadores: 20
+Incrementos por trabajador: 500000
+Total incrementos esperados: 10000000
+Contador final: 10000000
+¿Resultado correcto?: SÍ
+Tiempo de ejecución: 643.85 ms
+Throughput: 15531.57 ops/ms
+Tiempo CPU total: 0.9056 segundos
+Utilización CPU: 140.65%
